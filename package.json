@@ -4,7 +4,8 @@
   "description": "Express API for budget app",
   "main": "app.js",
   "scripts": {
-    "prebuild": "if exist dist rmdir dist /q /s",
+    "prebuild:local": "if exist dist rmdir dist /q /s",
+    "build:local": "tsc",
     "build": "tsc",
     "dev": "nodemon src/index.ts",
     "start": "node dist/index.js"
